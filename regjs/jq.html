@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h2>Student Registration Form</h2>
+        <form action="www.google.com" method="">
+            <!-- Name Section -->
+            <div class="form-group">
+                <div>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first_name" required>
+                </div>
+                <div>
+                    <label for="middle-name">Middle Name:</label>
+                    <input type="text" id="middle-name" name="middle_name">
+                </div>
+                <div>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last_name" required>
+                </div>
+            </div>
+            <!-- Date of Birth and Student ID -->
+            <div class="form-group">
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div>
+                    <label for="student-id">Student ID:</label>
+                    <input type="text" id="student-id" name="student_id" required>
+                </div>
+            </div>
+            <!-- Gender -->
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+            <!-- Parents Information -->
+            <div class="form-group">
+                <div>
+                    <label for="father-name">Father's Name:</label>
+                    <input type="text" id="father-name" name="father_name">
+                </div>
+                <div>
+                    <label for="mother-name">Mother's Name:</label>
+                    <input type="text" id="mother-name" name="mother_name">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div>
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="tel" id="phone-number" name="phone_number" pattern="[0-9]{10}" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="address">Address:</label><br>
+                <input type="text" id="address" name="address">
+            </div>
+           
+            <div class="form-group">
+                <div>
+                    <label for="address-state">State:</label>
+                    <input type="text" id="address-state" name="address_state">
+                </div>
+                <div>
+                    <label for="address-district">District:</label>
+                    <input type="text" id="address-district" name="address_district">
+                    <p id="check"></p>
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+</body>
+</html>
